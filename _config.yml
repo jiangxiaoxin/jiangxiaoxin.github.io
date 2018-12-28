@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: Helloca 💕 Lin
 subtitle:
 description:
 keywords:
-author: John Doe
+author: Helloca
 language: zh-CN
 timezone:
 
@@ -80,5 +80,5 @@ theme: next
 deploy:
   type: git
   repo: https://github.com/jiangxiaoxin/jiangxiaoxin.github.io.git
-  branch: gh-pages
+  branch: master
   message: update blogs
