@@ -13,9 +13,10 @@ tags: build site
 
 - 建一个新的 repo，名字叫 `username.github.io`。一定要这个名字，用 `username.github.io`去访问时才会解析到这个 repo
 - master分支里就留个 `.gitignore`就行了，其他的不需要，而且 `hexo deploy`会覆盖掉
-- 新建分支 development，然后 `hexo init`，添加基本的东西
+- 安装 hexo工具：`npm install -g hexo-cli`
+- 新建分支 development，然后 `hexo init`，`npm install`，添加基本的东西
 - `npm install hexo-deployer-git --save` 添加库，用来部署的。
-- `hexo s` `hexo g` `hexo d` 预览，打包，部署一条龙
+- hexo的默认工程会有一片 hello world文章，`hexo s` `hexo g` `hexo d` 预览，打包，部署一条龙。
 - deploy配置，`repo`不需要非用`ssh`方式，`https`也是可以的，然而一帮人说不可以。
 
 ```yml
