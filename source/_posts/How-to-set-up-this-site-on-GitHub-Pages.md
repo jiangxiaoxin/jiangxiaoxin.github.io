@@ -26,3 +26,5 @@ deploy:
   branch: master
   message: update blogs
 ```
+
+- 我用的是流行的 `next` 主题，并没有 git 一起提交到代码库，多地部署时，要重新 clone 最新的主题包文件（也可以自己定一个固定的版本），不然就会报一个错误： `no layout: index.html`
