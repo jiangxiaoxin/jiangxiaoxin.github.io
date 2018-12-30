@@ -317,6 +317,10 @@
 <li>deploy 配置，<code>repo</code>不需要非用<code>ssh</code>方式，<code>https</code>也是可以的，<em>然而一帮人说不可以</em>。上传的分支也不需要 <code>gh-pages</code>，直接用 master 就可以了。</li>
 </ul>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">  type:</span> <span class="string">git</span></span><br><span class="line"><span class="attr">  repo:</span> <span class="attr">https://github.com/username/username.github.io.git</span></span><br><span class="line"><span class="attr">  branch:</span> <span class="string">master</span></span><br><span class="line"><span class="attr">  message:</span> <span class="string">update</span> <span class="string">blogs</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>我用的是流行的 <code>next</code> 主题，并没有 git 一起提交到代码库，多地部署时，要重新 clone 最新的主题包文件（也可以自己定一个固定的版本），不然就会报一个错误： <code>no layout: index.html</code></li>
+</ul>
+
           
         
       

@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="Xin 💕 Lin">
 <meta property="og:description" content="Branches master 是部署分支，hexo打包之后部署到这个分支，不用新建 gh-pages，默认用 master分支 development 是开发分支，在这个分支里写文章，然后部署到master。  Steps 建一个新的 repo，名字叫 username.github.io。一定要这个名字，用 username.github.io 去访问时才会解析到这个 repo master">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-12-30T14:54:17.664Z">
+<meta property="og:updated_time" content="2018-12-30T15:03:33.730Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="How to set up this site on GitHub Pages">
 <meta name="twitter:description" content="Branches master 是部署分支，hexo打包之后部署到这个分支，不用新建 gh-pages，默认用 master分支 development 是开发分支，在这个分支里写文章，然后部署到master。  Steps 建一个新的 repo，名字叫 username.github.io。一定要这个名字，用 username.github.io 去访问时才会解析到这个 repo master">
@@ -314,6 +314,10 @@
 <li>deploy 配置，<code>repo</code>不需要非用<code>ssh</code>方式，<code>https</code>也是可以的，<em>然而一帮人说不可以</em>。上传的分支也不需要 <code>gh-pages</code>，直接用 master 就可以了。</li>
 </ul>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">  type:</span> <span class="string">git</span></span><br><span class="line"><span class="attr">  repo:</span> <span class="attr">https://github.com/username/username.github.io.git</span></span><br><span class="line"><span class="attr">  branch:</span> <span class="string">master</span></span><br><span class="line"><span class="attr">  message:</span> <span class="string">update</span> <span class="string">blogs</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>我用的是流行的 <code>next</code> 主题，并没有 git 一起提交到代码库，多地部署时，要重新 clone 最新的主题包文件（也可以自己定一个固定的版本），不然就会报一个错误： <code>no layout: index.html</code></li>
+</ul>
+
       
     </div>
     
